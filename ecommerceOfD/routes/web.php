@@ -15,3 +15,5 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('articles');
+
+Route::get('produit/', [MainController::class, 'oneProduitDetail']);

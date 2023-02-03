@@ -16,4 +16,9 @@ class MainController extends Controller
 
         return view('shop/index', compact('produits'));
     }
+
+    public function oneProduitDetail(){
+        // echo 'page produits';
+        return view('shop/oneProduitDetail');
+    }
 }
