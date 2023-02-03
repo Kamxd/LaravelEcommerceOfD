@@ -18,11 +18,8 @@
                     <div class="card-body">
                     <p class="card-text">{{$produit->nom}} <br> {{ $produit->description }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
+                        <span class="price">{{ number_format($produit->prix_ht,2) }} €</span>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-eye"></i></a>
                     </div>
                     </div>
                 </div>
