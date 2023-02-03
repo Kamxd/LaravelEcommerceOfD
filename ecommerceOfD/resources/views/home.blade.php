@@ -132,6 +132,8 @@
 
   @yield('content')
 
+  
+
 
 </main>
 
