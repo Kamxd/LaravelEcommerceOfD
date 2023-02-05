@@ -17,8 +17,13 @@ class MainController extends Controller
         return view('shop/index', compact('produits'));
     }
 
-    public function oneProduitDetail(){
+    public function oneProduitDetail(Request $request){
         // echo 'page produits';
-        return view('shop/oneProduitDetail');
+        // print_r($_GET);
+        // die($_GET);
+        //dd($_GET);
+        //dd($request->id);
+        $produit = Produit::find($request->id);
+        return view('shop/oneProduitDetail', compact('produit'));
     }
 }

@@ -10,7 +10,7 @@
     <title>Mon T-Shirt</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/album.css') }}" rel="stylesheet">
@@ -20,6 +20,8 @@
 </head>
 
 <body>
+@include('layouts/header')
+
     
     @yield('content')
 </body>
